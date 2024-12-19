@@ -32,7 +32,8 @@ app.post('/api/check-quality', (req, res) => {
         quality = 'Poor';
     }
 
-    if (storageCondition === 'roomTemperature' && ['milk', 'meat', 'fish'].includes(foodName.toLowerCase())) {
+    if (storageCondition === 'roomTemperature' && [
+        'Rice', 'Bread', 'Butter', 'Milk', 'Eggs', 'Cheese', 'Chicken', 'Beef', 'Pork', 'Fish', 'Potatoes', 'Tomatoes', 'Onions', 'Garlic', 'Carrots', 'Spinach', 'Cucumber', 'Bell Peppers', 'Bananas', 'Apples', 'Oranges', 'Lemons', 'Limes', 'Strawberries', 'Blueberries', 'Yogurt', 'Coffee', 'Tea', 'Sugar', 'Salt', 'Pepper', 'Olive Oil', 'Vinegar', 'Pasta', 'Noodles', 'Oats', 'Cornflakes', 'Peanut Butter', 'Jam', 'Honey', 'Soup', 'Salad', 'Lettuce', 'Beans', 'Lentils', 'Chickpeas', 'Tofu', 'Cottage Cheese', 'Butter Milk', 'Chapati', 'Paratha', 'Tortilla', 'Bacon', 'Sausages', 'Hamburger', 'Pizza', 'Hot Dog', 'Sandwich', 'Ketchup', 'Mayonnaise', 'Mustard', 'Chips', 'Popcorn', 'Crackers', 'Cereal', 'Porridge', 'Smoothies', 'Ice Cream', 'Cookies', 'Muffins', 'Brownies', 'Cake', 'Cupcakes', 'Pancakes', 'Waffles', 'French Toast', 'Syrup', 'Rice Cakes', 'Granola Bars', 'Trail Mix', 'Mashed Potatoes', 'Fried Rice', 'Scrambled Eggs', 'Boiled Eggs', 'Grilled Chicken', 'Roast Vegetables', 'Salsa', 'Guacamole', 'Pickles', 'Dried Fruits', 'Nuts', 'Chocolates', 'Soup Stock', 'Herbal Tea', 'Curry', 'Stew', 'Juice', 'Smoothies', 'Watermelon', 'Pineapple', 'Grapes', 'Kiwi', 'Pear'].includes(foodName.toLowerCase())) {
         quality = 'Poor';
     }
 
