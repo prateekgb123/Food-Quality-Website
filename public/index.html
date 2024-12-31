@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Quality Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="pic2.avif" alt="">
+        <h2>FoodQuality</h2>
+        </div>
+        <div class="up">
+            <img src="pic3.jpg" alt="">
+            <img src="pic4.jpeg" alt="">
+            <img src="pic5.jpg" alt="">
+        </div>
+    <main>
+        <h1>Food Quality Detector</h1>
+        <form id="food-form">
+            <label for="foodName">Food Name:</label>
+            <input type="text" id="foodName" name="foodName" required>
+            
+            <label for="expirationDate">Expiration Date:</label>
+            <input type="date" id="expirationDate" name="expirationDate" required>
+            
+            <label for="storageCondition">Storage Condition:</label>
+            <select id="storageCondition" name="storageCondition" required>
+                <option value="refrigerator">Refrigerator</option>
+                <option value="roomTemperature">Room Temperature</option>
+            </select>
+            
+            <label for="appearance">Appearance Score (1-10):</label>
+            <input type="number" id="appearance" name="appearance" min="1" max="10" required>
+            
+            <button type="submit">Check Quality</button>
+        </form>
+        <div id="result"></div>
+    </main>
+    <div class="footer">
+        <ul class="links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank"><img src="facebook.svg" alt=""></a> 
+          <a href="https://twitter.com" target="_blank"><img src="twitter.svg" alt=""></a>
+          <a href="https://linkedin.com" target="_blank"><img src="linkedin.svg" alt=""></a>
+          <a href="https://instagram.com" target="_blank"><img src="instagram.svg" alt=""></a>
+        </div>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
